@@ -29,7 +29,7 @@ const Hero = () => {
         gsap.to("#cta", {
             opacity: 1,
             y: -50,
-            delay: 4
+            delay: 3
             //scrollTrigger: 
         })
     }, [])
@@ -38,14 +38,14 @@ const Hero = () => {
         <div className="h-5/6 w-full flex-center flex-col">
         <p id="hero" className="hero-title">Iphone 15 pro</p>
         <div className="md:w-10/12 w-9/12">
-            <video classNME="pointer-events-none"
+            <video className="pointer-events-none"
             autoPlay muted playsInline={true} key={videoSrc}>
                 <source src={videoSrc} type="video/mp4" />
             </video>
         </div>
         </div>
         <div id="cta" className="flex flex-col items-center opacity-0 translate-y-20">
-            <a href="highlights" className="btn">Buy</a>
+            <a href="#highlights" className="btn">Buy</a>
             <p className="">from $199/month or $999</p>
         </div>
     </section>
